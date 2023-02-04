@@ -22,7 +22,7 @@ public class Main {
         ArrayCounter counter = new ArrayCounter(array);
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         System.out.println("Сумма элементов массива: " + forkJoinPool.invoke(counter));
-//        System.out.println("Среднее арифметическое суммы элементов массива: " + forkJoinPool.invoke(counter) / elementQuantity);
+        System.out.println("Среднее арифметическое суммы элементов массива: " + forkJoinPool.invoke(counter) / elementQuantity);
         // Время окончания отсчета  несколько потоков
         System.out.println("Время окончания отсчета: " + new Date());
     }
